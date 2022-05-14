@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="methods">   <!-- parallel keyword use to run different method, class , test in parallel -->
+  <test thread-count="2" name="Test">
+    <classes>
+      <class name="suit.Parallel_method"/>       <!-- if we use parallel="methods" then it run different methods parallelly -->
+    </classes>                                    <!-- if we use parallel="test" then it run different test parallelly in different browser -->
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+ 
